@@ -24,10 +24,10 @@ class ViewController: UIViewController, fontDelegate {
       
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        guard let fontVC = segue.destination as? settingsViewController else {
+        guard let font = segue.destination as? settingsViewController else {
             fatalError("Unexpected segue VC")
         }
-        fontVC.delegate = self
+        font.delegate = self
     }
 }
 

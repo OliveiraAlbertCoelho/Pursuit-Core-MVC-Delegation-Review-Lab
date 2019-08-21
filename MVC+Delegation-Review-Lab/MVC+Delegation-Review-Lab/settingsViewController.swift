@@ -21,7 +21,6 @@ class settingsViewController: UIViewController {
         model.changeSize(size: CGFloat(sender.value))
         updateLabel()
         stepperOut.value =  Double(sender.value)
-        
     }
     @IBAction func stepperOut(_ sender: UIStepper) {
         model.changeSize(size: CGFloat(sender.value))
@@ -31,6 +30,7 @@ class settingsViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        updatePreview ()
     }
     private func updateLabel () {
         messageLabel.font = UIFont.systemFont(ofSize: model.getCurrent())
@@ -38,6 +38,6 @@ class settingsViewController: UIViewController {
         updatePreview()
     }
     private func updatePreview (){
-        previewOut.text = "Preview Font Size: \(model.getCurrent().description)"
+        previewOut.text = "Preview Font Size: \(String(format: "%.01f", model.getCurrent()))"
     }
 }

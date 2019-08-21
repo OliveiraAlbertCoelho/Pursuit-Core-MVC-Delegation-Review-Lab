@@ -87,13 +87,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="12" minValue="7" maxValue="35" translatesAutoresizingMaskIntoConstraints="NO" id="4Ev-c9-8rV">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="10" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="4Ev-c9-8rV">
                                 <rect key="frame" x="81" y="222.5" width="252" height="31"/>
                                 <connections>
                                     <action selector="sliderAct:" destination="Xgu-32-0Zb" eventType="valueChanged" id="JGn-9l-rRb"/>
                                 </connections>
                             </slider>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="12" minimumValue="7" maximumValue="35" translatesAutoresizingMaskIntoConstraints="NO" id="PAb-DC-BwI">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minimumValue="10" maximumValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="PAb-DC-BwI">
                                 <rect key="frame" x="160" y="460.5" width="94" height="29"/>
                                 <connections>
                                     <action selector="stepperOut:" destination="Xgu-32-0Zb" eventType="valueChanged" id="0Bp-mn-GmG"/>

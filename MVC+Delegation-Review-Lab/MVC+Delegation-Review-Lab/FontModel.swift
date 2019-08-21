@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 struct fontModel {
-    
-    var fontSize: CGFloat  = 15
+    var fontSize: CGFloat  = 20
     mutating func changeSize (size: CGFloat){
         fontSize = size
     }
